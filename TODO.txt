@@ -1,0 +1,19 @@
+WINDOWS:
+-firewall programowy software na Windowsie
+-zrobic przeglad sprzetu jak sie dobrac do kamery
+-bez uwierzytelnienia kamera nie moze byc uzywana, blokada
+-udostepnienie po uwierzytlenieniu
+
+CONNECTION:
+-STunnel using OpenSSL
+
+ANDROID:
+-aplikacja uwierzytelniajaca uzytkownika
+-mozliwe uwierzytlenienie na haslo oraz odcisk palca
+-odcisk palca przetrzymywany bezpiecznie w aplikacji
+-sluzy on do odszyfrowania hasla bez wpisywania go
+-aby sie polaczyc moze jakis skaner urzadzen w sieci domowej i lista do wyboru
+-lista zapamietanych wczesniejszych wyborow
+-reczne wpisanie destination (ip)
+-mozliwa komunikacja nie tylko przez siec LAN 
+-po uwierzytelnieniu mozna obejrzec podglad obrazu kamery
