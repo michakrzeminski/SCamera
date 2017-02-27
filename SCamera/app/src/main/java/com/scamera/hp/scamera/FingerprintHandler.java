@@ -1,11 +1,15 @@
 package com.scamera.hp.scamera;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
 import android.support.v4.app.ActivityCompat;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class FingerprintHandler extends
@@ -60,6 +64,10 @@ public class FingerprintHandler extends
         Toast.makeText(appContext,
                 "Authentication succeeded.",
                 Toast.LENGTH_LONG).show();
+        //TODO zapelnic PINbox tak jakby sie samo wpisalo wiec odkodowanie z bazy hasla zahaszowanego
+        View rootView = ((Activity) appContext).getWindow().getDecorView().findViewById(android.R.id.content);
+        Button button = (Button) rootView.findViewById(R.id.camera);
+        button.setEnabled(true);
     }
 
 }
